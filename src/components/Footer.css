@@ -1,0 +1,133 @@
+.footer-box{
+  width: 100%;
+  height: 300px;
+  background-color: #3b8b13;
+  margin-top:50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-box div{
+    width: 28%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+
+.footerbox1{
+  justify-content: end;
+  padding-top: 50px;
+}
+
+.footerbox1 p{
+  color: rgb(255, 255, 255);
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 32px;
+}
+
+
+.footerbox2{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.footerbox3{
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.footerbox2 p{
+ color: white;
+ font-weight: 530;
+ font-size: 15px;
+ cursor: pointer;
+}
+
+.footerbox3 p{
+  color: white;
+  font-weight: 530;
+  font-size: 15px;
+  cursor: pointer;
+ }
+
+.link{
+  text-decoration: none;
+}
+
+@media (max-width:640px){
+  .footer-box div {
+  width: 30%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  }
+}
+
+
+@media (max-width:600px){
+  .footer-box {
+    width: 100%;
+    height: 450px;
+    background-color: #3b8b13;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-right: 15%;
+  }
+
+  .footer-box div {
+    display: flex;
+    height: auto;
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  .footerbox1 {
+    justify-content: start;
+    padding-top: 30px;
+  }
+
+  .footerbox2 {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    row-gap: 10px;
+    padding-top: 50px;
+  } 
+
+  .footerbox3 {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap:10px;
+  }
+
+  .footerbox2 p{
+    color: white;
+    font-weight: 530;
+    font-size: 16px;
+    cursor: pointer;
+  }
+   
+  .footerbox3 p{
+    color: white;
+    font-weight: 530;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .footerbox1 p {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 32px;
+  }
+}

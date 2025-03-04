@@ -1,0 +1,36 @@
+.about-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-top: 124px;
+  }
+  
+  .about-container h1 {
+    font-size: 2.5rem;
+    color:#3b8b13;
+    margin-bottom: 20px;
+  }
+  
+  .about-container h2 {
+    font-size: 1.8rem;
+    color: #3b8b13;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .about-container p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .about-container ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .about-container li {
+    margin-bottom: 10px;
+  }
+  

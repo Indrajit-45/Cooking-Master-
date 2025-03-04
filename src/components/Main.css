@@ -1,0 +1,407 @@
+.recipes {
+    margin: 50px 0;
+  }
+  
+  .recipes h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #3b8b13;
+  }
+  
+  /* .recipe-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+  } */
+  
+  
+  
+  .testimonials {
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+  }
+  
+  .testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonials p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+
+  .Section-titleArea{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+  }
+
+  .Section-titleArea h2{
+     color: #3b8b13;
+     font-size: 46px;
+     font-weight: 720;
+     
+  }
+
+  .Section-titleArea p{
+    font-size: 18px;
+    color: #484848;
+    letter-spacing: 0.5px;
+  }
+
+
+
+
+
+  /* Search Box */
+.search-section {
+    text-align: center;
+    margin: 20px 0;
+    /* background-color: red; */
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 80%;
+    height: 50px;
+    max-width: 700px;
+    font-size: 16px;
+    border: 1px solid #484848;
+    border-radius: 4px;
+  }
+
+  .search-input:focus{
+     outline: none;
+  }
+  
+  .search-btn {
+    padding: 10px 15px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #3b8b13;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .search-btn:hover {
+    background-color: #42b24b;
+  }
+
+  .search-btn:active {
+    transition-duration: 0.1s;
+    background-color: #42b24b;
+  }
+  
+  /* Recipe Cards */
+
+
+ 
+
+
+  .recipe-cards {
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    align-content: start;
+    gap: 10px;
+    justify-content: center;
+    min-height: 400px; 
+    max-height: 6000px;
+    width: 100%; 
+    overflow-y: auto; 
+    padding-bottom: 20px;
+  }
+
+  .No-recipes-found-Text{
+    display: flex;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    color: #484848;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  
+  .card {
+    border: 1px solid #707070;
+    overflow: hidden;
+    width: 250px;
+    height: 320px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    position: relative;
+    /* box-shadow: 0.3px 0.3px 3px #00000073,
+   -0.3px -0.3px 3px #00000073; */
+  }
+
+  .CardBadge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-image: url(https://cookingmatters.org/wp-content/plugins/cm-recipe-finder/assets/images/badge-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;   
+    align-content: center;
+    justify-content: center;
+  }
+
+  .readyInMinutes{
+    color: #3b8b13;
+    font-size: 20px;
+    font-weight: 700;
+    /* background-color: #f1f1f1; */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .min{
+    font-size: 10px;
+    font-weight: 700;
+    /* background-color: #707070; */
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b8b13;
+  }
+
+  @media (min-width:600px){
+    .card:hover{
+      box-shadow: 0.3px 0.3px 3px #000000bc,
+     -0.3px -0.3px 3px #000000bf;
+    }
+    .card:hover p{
+      color: #3b8b13;
+   }
+  }
+  
+  
+
+  .card:active{
+    box-shadow: 0.3px 0.3px 3px #000000bc,
+    -0.3px -0.3px 3px #000000bf;
+  }
+
+  
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    
+  }
+  
+  .card p {
+    color: rgb(47, 47, 47);
+    font-size: 17px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    padding: 5px;
+    padding-top: 2px;
+  }
+
+  
+  
+  .card:active p{
+    color: #3b8b13;
+ }
+
+  
+  .category-filters {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  
+  
+  
+  
+ 
+  
+  .category-filters button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+  }
+  
+  .category-filters button.active {
+    background-color: #3b8b13;
+    color: white;
+  }
+
+  
+  @media (min-width:600px){
+    .category-filters button:hover {
+      background-color: #3b8b13;
+      color: white;
+    }
+  }
+  
+
+
+  
+ .backToTop-box{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ }
+
+ .backToTop-button{
+   /* height: 50px; */
+   border: none;
+   background-color: white;
+   color: #3b8b13;
+   display: flex;
+   align-items: end;
+   justify-content: center;
+   column-gap: 5px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition-duration: 0.4s;
+  }
+
+ 
+ .backToTop-button p{
+  color: #3b8b13;
+  font-weight: 600;
+  font-size: 18px;
+  transition-duration: 0.4s;
+ }
+
+ .ArrowUp-Long-icon{
+  transition-duration: 0.4s;
+  font-size: 20px;
+ }
+
+ 
+ 
+
+@media (min-width:600px){
+  .backToTop-button:hover .ArrowUp-Long-icon{
+    color: #42b24b;
+  }
+  .backToTop-button:hover p{
+    color: #42b24b;
+  }
+}
+
+.backToTop-button:active .ArrowUp-Long-icon{
+  transition-duration: 0.1s;
+  color: #42b24b;
+}
+
+ 
+
+.backToTop-button:active p{
+  transition: 0.1s;
+  color: #42b24b;
+}
+
+@media (max-width:600px){
+  .search-input {
+    padding: 10px;
+    width: 70%;
+    height: 50px;
+    max-width: 700px;
+    font-size: 16px;
+    border: 1px solid #484848;
+    border-radius: 4px;
+  } 
+
+  .category-filters {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .recipes {
+    margin: 50px 0;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+
+@media (max-width:542px){
+  .card {
+    border: 1px solid #707070;
+    overflow: hidden;
+    width: 300px;
+    height: 320px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    position: relative;
+  }
+
+  .Section-titleArea {
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+
+  .Section-titleArea p {
+    text-align: center;
+  }
+
+  .Section-titleArea h2 {
+   color: #3b8b13;
+   font-size: 40px;
+   font-weight: 700;
+  }
+
+ .search-section {
+   padding-left: 5px;
+   padding-right: 5px;
+  }
+
+ .category-filters {
+   text-align: center;
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+  }
+
+  .search-btn:hover {
+    background-color: #3b8b13;
+  }
+
+  /* .category-filters button:hover {
+    background-color: #ffffff;
+    color: #333;
+  } */
+}
+
+
+
+
+
+
+
+  

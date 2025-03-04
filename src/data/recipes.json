@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "title": "Spaghetti Carbonara",
+      "category": "Dinner",
+      "ingredients": ["Spaghetti", "Eggs", "Cheese", "Bacon"],
+      "steps": ["Boil pasta", "Cook bacon", "Mix ingredients"],
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "title": "Pancakes",
+      "category": "Breakfast",
+      "ingredients": ["Flour", "Milk", "Eggs", "Sugar"],
+      "steps": ["Mix ingredients", "Cook on skillet"],
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+  
